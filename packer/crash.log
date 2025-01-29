@@ -1,0 +1,297 @@
+2025/01/26 17:18:27 [INFO] Packer version: 1.11.2 [go1.21.12 windows amd64]
+2025/01/26 17:18:27 [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2025/01/26 17:18:27 [INFO] PACKER_CONFIG env var set; attempting to open config file: C:\Users\Tyler\AppData\Roaming\packer.config
+2025/01/26 17:18:27 [WARN] Config file doesn't exist: C:\Users\Tyler\AppData\Roaming\packer.config
+2025/01/26 17:18:27 [INFO] Setting cache directory: C:\Users\Tyler\Desktop\Laboratorio MEAN Terraform\terraform\packer\packer_cache
+e: cannot determine if process is in background: Process background check error: not implemented yet
+2025/01/26 17:18:27 [TRACE] listing potential installations for "github.com/hashicorp/amazon" that match ">= 1.3.3". plugingetter.ListInstallationsOptions{PluginDirectory:"C:\\Users\\Tyler\\AppData\\Roaming\\packer.d\\plugins", BinaryInstallationOptions:plugingetter.BinaryInstallationOptions{APIVersionMajor:"5", APIVersionMinor:"0", OS:"windows", ARCH:"amd64", Ext:".exe", Checksummers:[]plugingetter.Checksummer{plugingetter.Checksummer{Type:"sha256", Hash:(*sha256.digest)(0xc0000e5680)}}, ReleasesOnly:false}}
+2025/01/26 17:18:28 [TRACE] Found the following "github.com/hashicorp/amazon" installations: [{C:\Users\Tyler\AppData\Roaming\packer.d\plugins\github.com\hashicorp\amazon\packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe v1.3.3 x5.0}]
+2025/01/26 17:18:28 [INFO] found external [chroot ebs ebssurrogate ebsvolume instance] builders from amazon plugin
+2025/01/26 17:18:28 [INFO] found external [import] post-processors from amazon plugin
+2025/01/26 17:18:28 found external [ami parameterstore secretsmanager] datasource from amazon plugin
+2025/01/26 17:18:28 [TRACE] listing potential installations for <nil> that match "". plugingetter.ListInstallationsOptions{PluginDirectory:"C:\\Users\\Tyler\\AppData\\Roaming\\packer.d\\plugins", BinaryInstallationOptions:plugingetter.BinaryInstallationOptions{APIVersionMajor:"5", APIVersionMinor:"0", OS:"windows", ARCH:"amd64", Ext:".exe", Checksummers:[]plugingetter.Checksummer{plugingetter.Checksummer{Type:"sha256", Hash:(*sha256.digest)(0xc00054c080)}}, ReleasesOnly:false}}
+2025/01/26 17:18:28 [INFO] found external [arm chroot dtl] builders from azure plugin
+2025/01/26 17:18:28 found external [dtlartifact] provisioner from azure plugin
+2025/01/26 17:18:28 [INFO] found external [chroot ebs ebssurrogate ebsvolume instance] builders from amazon plugin
+2025/01/26 17:18:28 [INFO] found external [import] post-processors from amazon plugin
+2025/01/26 17:18:28 found external [ami parameterstore secretsmanager] datasource from amazon plugin
+2025/01/26 17:18:28 [INFO] Starting external plugin C:\Users\Tyler\AppData\Roaming\packer.d\plugins\github.com\hashicorp\amazon\packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe start builder ebs
+2025/01/26 17:18:28 Starting plugin: C:\Users\Tyler\AppData\Roaming\packer.d\plugins\github.com\hashicorp\amazon\packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe []string{"C:\\Users\\Tyler\\AppData\\Roaming\\packer.d\\plugins\\github.com\\hashicorp\\amazon\\packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe", "start", "builder", "ebs"}
+2025/01/26 17:18:28 Waiting for RPC address for: C:\Users\Tyler\AppData\Roaming\packer.d\plugins\github.com\hashicorp\amazon\packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe
+2025/01/26 17:18:28 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 2025/01/26 17:18:28 Plugin port range: [10000,25000]
+2025/01/26 17:18:28 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 2025/01/26 17:18:28 Plugin address: tcp 127.0.0.1:10000
+2025/01/26 17:18:28 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 2025/01/26 17:18:28 Waiting for connection...
+2025/01/26 17:18:28 Received tcp RPC address for C:\Users\Tyler\AppData\Roaming\packer.d\plugins\github.com\hashicorp\amazon\packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe: addr is 127.0.0.1:10000
+2025/01/26 17:18:28 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 2025/01/26 17:18:28 Serving a plugin connection...
+2025/01/26 17:18:28 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 2025/01/26 17:18:28 [TRACE] starting builder ebs
+2025/01/26 17:18:28 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 2025/01/26 17:18:28 [INFO] (aws): No AWS timeout and polling overrides have been set. Packer will default to waiter-specific delays and timeouts. If you would like to customize the length of time between retries and max number of retries you may do so by setting the environment variables AWS_POLL_DELAY_SECONDS and AWS_MAX_ATTEMPTS or the configuration options aws_polling_delay_seconds and aws_polling_max_attempts to your desired values.
+2025/01/26 17:18:28 [INFO] Starting internal plugin packer-provisioner-shell
+2025/01/26 17:18:28 Starting plugin: C:\ProgramData\chocolatey\lib\packer\tools\packer.exe []string{"C:\\ProgramData\\chocolatey\\lib\\packer\\tools\\packer.exe", "execute", "packer-provisioner-shell"}
+2025/01/26 17:18:28 Waiting for RPC address for: C:\ProgramData\chocolatey\lib\packer\tools\packer.exe
+2025/01/26 17:18:28 packer.exe plugin: [INFO] Packer version: 1.11.2 [go1.21.12 windows amd64]
+2025/01/26 17:18:28 packer.exe plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2025/01/26 17:18:28 packer.exe plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: C:\Users\Tyler\AppData\Roaming\packer.config
+2025/01/26 17:18:28 packer.exe plugin: [WARN] Config file doesn't exist: C:\Users\Tyler\AppData\Roaming\packer.config
+2025/01/26 17:18:28 packer.exe plugin: [INFO] Setting cache directory: C:\Users\Tyler\Desktop\Laboratorio MEAN Terraform\terraform\packer\packer_cache
+2025/01/26 17:18:28 packer.exe plugin: args: []string{"packer-provisioner-shell"}
+2025/01/26 17:18:28 packer.exe plugin: Plugin port range: [10000,25000]
+2025/01/26 17:18:28 packer.exe plugin: Plugin address: tcp 127.0.0.1:10000
+2025/01/26 17:18:28 Received tcp RPC address for C:\ProgramData\chocolatey\lib\packer\tools\packer.exe: addr is 127.0.0.1:10000
+2025/01/26 17:18:28 packer.exe plugin: Waiting for connection...
+2025/01/26 17:18:28 packer.exe plugin: Serving a plugin connection...
+2025/01/26 17:18:28 [INFO] Starting internal plugin packer-provisioner-file
+2025/01/26 17:18:28 Starting plugin: C:\ProgramData\chocolatey\lib\packer\tools\packer.exe []string{"C:\\ProgramData\\chocolatey\\lib\\packer\\tools\\packer.exe", "execute", "packer-provisioner-file"}
+2025/01/26 17:18:28 Waiting for RPC address for: C:\ProgramData\chocolatey\lib\packer\tools\packer.exe
+2025/01/26 17:18:29 packer.exe plugin: [INFO] Packer version: 1.11.2 [go1.21.12 windows amd64]
+2025/01/26 17:18:29 packer.exe plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2025/01/26 17:18:29 packer.exe plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: C:\Users\Tyler\AppData\Roaming\packer.config
+2025/01/26 17:18:29 packer.exe plugin: [WARN] Config file doesn't exist: C:\Users\Tyler\AppData\Roaming\packer.config
+2025/01/26 17:18:29 packer.exe plugin: [INFO] Setting cache directory: C:\Users\Tyler\Desktop\Laboratorio MEAN Terraform\terraform\packer\packer_cache
+2025/01/26 17:18:29 packer.exe plugin: args: []string{"packer-provisioner-file"}
+2025/01/26 17:18:29 packer.exe plugin: Plugin port range: [10000,25000]
+2025/01/26 17:18:29 packer.exe plugin: Plugin address: tcp 127.0.0.1:10000
+2025/01/26 17:18:29 Received tcp RPC address for C:\ProgramData\chocolatey\lib\packer\tools\packer.exe: addr is 127.0.0.1:10000
+2025/01/26 17:18:29 packer.exe plugin: Waiting for connection...
+2025/01/26 17:18:29 packer.exe plugin: Serving a plugin connection...
+2025/01/26 17:18:29 [INFO] Starting internal plugin packer-provisioner-shell
+2025/01/26 17:18:29 Starting plugin: C:\ProgramData\chocolatey\lib\packer\tools\packer.exe []string{"C:\\ProgramData\\chocolatey\\lib\\packer\\tools\\packer.exe", "execute", "packer-provisioner-shell"}
+2025/01/26 17:18:29 Waiting for RPC address for: C:\ProgramData\chocolatey\lib\packer\tools\packer.exe
+2025/01/26 17:18:29 packer.exe plugin: [INFO] Packer version: 1.11.2 [go1.21.12 windows amd64]
+2025/01/26 17:18:29 packer.exe plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2025/01/26 17:18:29 packer.exe plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: C:\Users\Tyler\AppData\Roaming\packer.config
+2025/01/26 17:18:29 packer.exe plugin: [WARN] Config file doesn't exist: C:\Users\Tyler\AppData\Roaming\packer.config
+2025/01/26 17:18:29 packer.exe plugin: [INFO] Setting cache directory: C:\Users\Tyler\Desktop\Laboratorio MEAN Terraform\terraform\packer\packer_cache
+2025/01/26 17:18:29 packer.exe plugin: args: []string{"packer-provisioner-shell"}
+2025/01/26 17:18:29 packer.exe plugin: Plugin port range: [10000,25000]
+2025/01/26 17:18:29 packer.exe plugin: Plugin address: tcp 127.0.0.1:10000
+2025/01/26 17:18:29 packer.exe plugin: Waiting for connection...
+2025/01/26 17:18:29 Received tcp RPC address for C:\ProgramData\chocolatey\lib\packer\tools\packer.exe: addr is 127.0.0.1:10000
+2025/01/26 17:18:29 packer.exe plugin: Serving a plugin connection...
+2025/01/26 17:18:29 [INFO] Starting internal plugin packer-post-processor-manifest
+2025/01/26 17:18:29 Starting plugin: C:\ProgramData\chocolatey\lib\packer\tools\packer.exe []string{"C:\\ProgramData\\chocolatey\\lib\\packer\\tools\\packer.exe", "execute", "packer-post-processor-manifest"}
+2025/01/26 17:18:29 Waiting for RPC address for: C:\ProgramData\chocolatey\lib\packer\tools\packer.exe
+2025/01/26 17:18:29 packer.exe plugin: [INFO] Packer version: 1.11.2 [go1.21.12 windows amd64]
+2025/01/26 17:18:29 packer.exe plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2025/01/26 17:18:29 packer.exe plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: C:\Users\Tyler\AppData\Roaming\packer.config
+2025/01/26 17:18:29 packer.exe plugin: [WARN] Config file doesn't exist: C:\Users\Tyler\AppData\Roaming\packer.config
+2025/01/26 17:18:29 packer.exe plugin: [INFO] Setting cache directory: C:\Users\Tyler\Desktop\Laboratorio MEAN Terraform\terraform\packer\packer_cache
+2025/01/26 17:18:29 packer.exe plugin: args: []string{"packer-post-processor-manifest"}
+2025/01/26 17:18:29 packer.exe plugin: Plugin port range: [10000,25000]
+2025/01/26 17:18:29 packer.exe plugin: Plugin address: tcp 127.0.0.1:10000
+2025/01/26 17:18:29 Received tcp RPC address for C:\ProgramData\chocolatey\lib\packer\tools\packer.exe: addr is 127.0.0.1:10000
+2025/01/26 17:18:29 packer.exe plugin: Waiting for connection...
+2025/01/26 17:18:29 packer.exe plugin: Serving a plugin connection...
+2025/01/26 17:18:29 [INFO] Starting internal plugin packer-post-processor-shell-local
+2025/01/26 17:18:29 Starting plugin: C:\ProgramData\chocolatey\lib\packer\tools\packer.exe []string{"C:\\ProgramData\\chocolatey\\lib\\packer\\tools\\packer.exe", "execute", "packer-post-processor-shell-local"}
+2025/01/26 17:18:29 Waiting for RPC address for: C:\ProgramData\chocolatey\lib\packer\tools\packer.exe
+2025/01/26 17:18:29 packer.exe plugin: [INFO] Packer version: 1.11.2 [go1.21.12 windows amd64]
+2025/01/26 17:18:29 packer.exe plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2025/01/26 17:18:29 packer.exe plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: C:\Users\Tyler\AppData\Roaming\packer.config
+2025/01/26 17:18:29 packer.exe plugin: [WARN] Config file doesn't exist: C:\Users\Tyler\AppData\Roaming\packer.config
+2025/01/26 17:18:29 packer.exe plugin: [INFO] Setting cache directory: C:\Users\Tyler\Desktop\Laboratorio MEAN Terraform\terraform\packer\packer_cache
+2025/01/26 17:18:29 packer.exe plugin: args: []string{"packer-post-processor-shell-local"}
+2025/01/26 17:18:29 packer.exe plugin: Plugin port range: [10000,25000]
+2025/01/26 17:18:29 packer.exe plugin: Plugin address: tcp 127.0.0.1:10000
+2025/01/26 17:18:29 Received tcp RPC address for C:\ProgramData\chocolatey\lib\packer\tools\packer.exe: addr is 127.0.0.1:10000
+2025/01/26 17:18:29 packer.exe plugin: Waiting for connection...
+2025/01/26 17:18:29 packer.exe plugin: Serving a plugin connection...
+2025/01/26 17:18:29 [INFO] Starting external plugin C:\Users\Tyler\AppData\Roaming\packer.d\plugins\github.com\hashicorp\amazon\packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe start builder ebs
+2025/01/26 17:18:29 Starting plugin: C:\Users\Tyler\AppData\Roaming\packer.d\plugins\github.com\hashicorp\amazon\packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe []string{"C:\\Users\\Tyler\\AppData\\Roaming\\packer.d\\plugins\\github.com\\hashicorp\\amazon\\packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe", "start", "builder", "ebs"}
+2025/01/26 17:18:29 Waiting for RPC address for: C:\Users\Tyler\AppData\Roaming\packer.d\plugins\github.com\hashicorp\amazon\packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe
+2025/01/26 17:18:29 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 2025/01/26 17:18:29 Plugin port range: [10000,25000]
+2025/01/26 17:18:29 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 2025/01/26 17:18:29 Plugin address: tcp 127.0.0.1:10000
+2025/01/26 17:18:29 Received tcp RPC address for C:\Users\Tyler\AppData\Roaming\packer.d\plugins\github.com\hashicorp\amazon\packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe: addr is 127.0.0.1:10000
+2025/01/26 17:18:29 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 2025/01/26 17:18:29 Waiting for connection...
+2025/01/26 17:18:29 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 2025/01/26 17:18:29 Serving a plugin connection...
+2025/01/26 17:18:29 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 2025/01/26 17:18:29 [TRACE] starting builder ebs
+2025/01/26 17:18:29 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 2025/01/26 17:18:29 [INFO] (aws): No AWS timeout and polling overrides have been set. Packer will default to waiter-specific delays and timeouts. If you would like to customize the length of time between retries and max number of retries you may do so by setting the environment variables AWS_POLL_DELAY_SECONDS and AWS_MAX_ATTEMPTS or the configuration options aws_polling_delay_seconds and aws_polling_max_attempts to your desired values.
+2025/01/26 17:18:29 [INFO] Starting internal plugin packer-provisioner-shell
+2025/01/26 17:18:29 Starting plugin: C:\ProgramData\chocolatey\lib\packer\tools\packer.exe []string{"C:\\ProgramData\\chocolatey\\lib\\packer\\tools\\packer.exe", "execute", "packer-provisioner-shell"}
+2025/01/26 17:18:29 Waiting for RPC address for: C:\ProgramData\chocolatey\lib\packer\tools\packer.exe
+2025/01/26 17:18:29 packer.exe plugin: [INFO] Packer version: 1.11.2 [go1.21.12 windows amd64]
+2025/01/26 17:18:29 packer.exe plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2025/01/26 17:18:29 packer.exe plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: C:\Users\Tyler\AppData\Roaming\packer.config
+2025/01/26 17:18:29 packer.exe plugin: [WARN] Config file doesn't exist: C:\Users\Tyler\AppData\Roaming\packer.config
+2025/01/26 17:18:29 packer.exe plugin: [INFO] Setting cache directory: C:\Users\Tyler\Desktop\Laboratorio MEAN Terraform\terraform\packer\packer_cache
+2025/01/26 17:18:29 packer.exe plugin: args: []string{"packer-provisioner-shell"}
+2025/01/26 17:18:29 packer.exe plugin: Plugin port range: [10000,25000]
+2025/01/26 17:18:29 packer.exe plugin: Plugin address: tcp 127.0.0.1:10000
+2025/01/26 17:18:29 packer.exe plugin: Waiting for connection...
+2025/01/26 17:18:29 Received tcp RPC address for C:\ProgramData\chocolatey\lib\packer\tools\packer.exe: addr is 127.0.0.1:10000
+2025/01/26 17:18:29 packer.exe plugin: Serving a plugin connection...
+2025/01/26 17:18:29 [INFO] Starting internal plugin packer-post-processor-manifest
+2025/01/26 17:18:29 Starting plugin: C:\ProgramData\chocolatey\lib\packer\tools\packer.exe []string{"C:\\ProgramData\\chocolatey\\lib\\packer\\tools\\packer.exe", "execute", "packer-post-processor-manifest"}
+2025/01/26 17:18:29 Waiting for RPC address for: C:\ProgramData\chocolatey\lib\packer\tools\packer.exe
+2025/01/26 17:18:29 packer.exe plugin: [INFO] Packer version: 1.11.2 [go1.21.12 windows amd64]
+2025/01/26 17:18:29 packer.exe plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2025/01/26 17:18:29 packer.exe plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: C:\Users\Tyler\AppData\Roaming\packer.config
+2025/01/26 17:18:29 packer.exe plugin: [WARN] Config file doesn't exist: C:\Users\Tyler\AppData\Roaming\packer.config
+2025/01/26 17:18:29 packer.exe plugin: [INFO] Setting cache directory: C:\Users\Tyler\Desktop\Laboratorio MEAN Terraform\terraform\packer\packer_cache
+2025/01/26 17:18:29 packer.exe plugin: args: []string{"packer-post-processor-manifest"}
+2025/01/26 17:18:29 packer.exe plugin: Plugin port range: [10000,25000]
+2025/01/26 17:18:29 packer.exe plugin: Plugin address: tcp 127.0.0.1:10000
+2025/01/26 17:18:29 Received tcp RPC address for C:\ProgramData\chocolatey\lib\packer\tools\packer.exe: addr is 127.0.0.1:10000
+2025/01/26 17:18:29 packer.exe plugin: Waiting for connection...
+2025/01/26 17:18:29 packer.exe plugin: Serving a plugin connection...
+2025/01/26 17:18:29 [INFO] Starting internal plugin packer-post-processor-shell-local
+2025/01/26 17:18:29 Starting plugin: C:\ProgramData\chocolatey\lib\packer\tools\packer.exe []string{"C:\\ProgramData\\chocolatey\\lib\\packer\\tools\\packer.exe", "execute", "packer-post-processor-shell-local"}
+2025/01/26 17:18:29 Waiting for RPC address for: C:\ProgramData\chocolatey\lib\packer\tools\packer.exe
+2025/01/26 17:18:29 packer.exe plugin: [INFO] Packer version: 1.11.2 [go1.21.12 windows amd64]
+2025/01/26 17:18:29 packer.exe plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2025/01/26 17:18:29 packer.exe plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: C:\Users\Tyler\AppData\Roaming\packer.config
+2025/01/26 17:18:29 packer.exe plugin: [WARN] Config file doesn't exist: C:\Users\Tyler\AppData\Roaming\packer.config
+2025/01/26 17:18:29 packer.exe plugin: [INFO] Setting cache directory: C:\Users\Tyler\Desktop\Laboratorio MEAN Terraform\terraform\packer\packer_cache
+2025/01/26 17:18:29 packer.exe plugin: args: []string{"packer-post-processor-shell-local"}
+2025/01/26 17:18:29 packer.exe plugin: Plugin port range: [10000,25000]
+2025/01/26 17:18:29 packer.exe plugin: Plugin address: tcp 127.0.0.1:10000
+2025/01/26 17:18:29 Received tcp RPC address for C:\ProgramData\chocolatey\lib\packer\tools\packer.exe: addr is 127.0.0.1:10000
+2025/01/26 17:18:29 packer.exe plugin: Waiting for connection...
+2025/01/26 17:18:29 packer.exe plugin: Serving a plugin connection...
+2025/01/26 17:18:29 ui: node-nginx-app.amazon-ebs.ubuntu-node: output will be in this color.
+2025/01/26 17:18:29 ui: mongodb-instance.amazon-ebs.ubuntu-mongo: output will be in this color.
+2025/01/26 17:18:29 ui: 
+2025/01/26 17:18:29 Build debug mode: false
+2025/01/26 17:18:29 Force build: false
+2025/01/26 17:18:29 On error: 
+2025/01/26 17:18:29 Waiting on builds to complete...
+2025/01/26 17:18:29 Starting build run: mongodb-instance.amazon-ebs.ubuntu-mongo
+2025/01/26 17:18:29 Starting build run: node-nginx-app.amazon-ebs.ubuntu-node
+2025/01/26 17:18:29 Running builder: amazon-ebs
+2025/01/26 17:18:29 [INFO] (telemetry) Starting builder amazon-ebs.ubuntu-mongo
+2025/01/26 17:18:29 Running builder: amazon-ebs
+2025/01/26 17:18:29 [INFO] (telemetry) Starting builder amazon-ebs.ubuntu-node
+2025/01/26 17:18:29 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 2025/01/26 17:18:29 [INFO] AWS Auth provider used: "SharedCredentialsProvider"
+2025/01/26 17:18:29 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 2025/01/26 17:18:29 [INFO] AWS Auth provider used: "SharedCredentialsProvider"
+2025/01/26 17:18:29 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 2025/01/26 17:18:29 Found region us-west-2
+2025/01/26 17:18:29 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 2025/01/26 17:18:29 [INFO] AWS Auth provider used: "SharedCredentialsProvider"
+2025/01/26 17:18:29 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 2025/01/26 17:18:29 Found region us-west-2
+2025/01/26 17:18:29 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 2025/01/26 17:18:29 [INFO] AWS Auth provider used: "SharedCredentialsProvider"
+2025/01/26 17:18:30 ui: ==> mongodb-instance.amazon-ebs.ubuntu-mongo: Prevalidating any provided VPC information
+2025/01/26 17:18:30 ui: ==> node-nginx-app.amazon-ebs.ubuntu-node: Prevalidating any provided VPC information
+2025/01/26 17:18:30 ui: ==> mongodb-instance.amazon-ebs.ubuntu-mongo: Prevalidating AMI Name: ami-mongo
+2025/01/26 17:18:30 ui: ==> node-nginx-app.amazon-ebs.ubuntu-node: Prevalidating AMI Name: ami-node
+2025/01/26 17:18:31 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 2025/01/26 17:18:31 Using AMI Filters {
+2025/01/26 17:18:31 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin:   Filters: [{
+2025/01/26 17:18:31 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin:       Name: "virtualization-type",
+2025/01/26 17:18:31 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin:       Values: ["hvm"]
+2025/01/26 17:18:31 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin:     },{
+2025/01/26 17:18:31 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin:       Name: "name",
+2025/01/26 17:18:31 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin:       Values: ["ubuntu/images/*ubuntu-jammy-22.04-amd64-server-*"]
+2025/01/26 17:18:31 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin:     },{
+2025/01/26 17:18:31 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin:       Name: "root-device-type",
+2025/01/26 17:18:31 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin:       Values: ["ebs"]
+2025/01/26 17:18:31 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin:     }],
+2025/01/26 17:18:31 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin:   IncludeDeprecated: false,
+2025/01/26 17:18:31 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin:   Owners: ["099720109477"]
+2025/01/26 17:18:31 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: }
+2025/01/26 17:18:31 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 2025/01/26 17:18:31 Using AMI Filters {
+2025/01/26 17:18:31 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin:   Filters: [{
+2025/01/26 17:18:31 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin:       Name: "virtualization-type",
+2025/01/26 17:18:31 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin:       Values: ["hvm"]
+2025/01/26 17:18:31 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin:     },{
+2025/01/26 17:18:31 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin:       Name: "name",
+2025/01/26 17:18:31 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin:       Values: ["ubuntu/images/*ubuntu-jammy-22.04-amd64-server-*"]
+2025/01/26 17:18:31 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin:     },{
+2025/01/26 17:18:31 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin:       Name: "root-device-type",
+2025/01/26 17:18:31 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin:       Values: ["ebs"]
+2025/01/26 17:18:31 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin:     }],
+2025/01/26 17:18:31 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin:   IncludeDeprecated: false,
+2025/01/26 17:18:31 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin:   Owners: ["099720109477"]
+2025/01/26 17:18:31 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: }
+2025/01/26 17:18:32 ui:     mongodb-instance.amazon-ebs.ubuntu-mongo: Found Image ID: ami-0606dd43116f5ed57
+2025/01/26 17:18:32 ui: ==> mongodb-instance.amazon-ebs.ubuntu-mongo: Setting public IP address to true on instance without a subnet ID
+2025/01/26 17:18:32 ui:     node-nginx-app.amazon-ebs.ubuntu-node: Found Image ID: ami-0606dd43116f5ed57
+2025/01/26 17:18:32 ui: ==> node-nginx-app.amazon-ebs.ubuntu-node: Setting public IP address to true on instance without a subnet ID
+2025/01/26 17:18:32 ui: ==> mongodb-instance.amazon-ebs.ubuntu-mongo: No VPC ID provided, Packer will use the default VPC
+2025/01/26 17:18:32 ui: ==> node-nginx-app.amazon-ebs.ubuntu-node: No VPC ID provided, Packer will use the default VPC
+2025/01/26 17:18:32 ui: ==> mongodb-instance.amazon-ebs.ubuntu-mongo: Inferring subnet from the selected VPC "vpc-00f17ad296353bb95"
+2025/01/26 17:18:32 ui: ==> node-nginx-app.amazon-ebs.ubuntu-node: Inferring subnet from the selected VPC "vpc-00f17ad296353bb95"
+2025/01/26 17:18:33 ui: ==> mongodb-instance.amazon-ebs.ubuntu-mongo: Failed to filter subnets/AZ for the requested machine type "t2.micro": no AZ match the requested machine type "t2.micro"
+2025/01/26 17:18:33 ui: ==> mongodb-instance.amazon-ebs.ubuntu-mongo: This may result in Packer picking a subnet/AZ that can't host the requested machine type
+2025/01/26 17:18:33 ui: ==> mongodb-instance.amazon-ebs.ubuntu-mongo: Please check that you have the permissions required to run DescribeInstanceTypeOfferings and try again.
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: panic: runtime error: index out of range [-1]
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: goroutine 14 [running]:
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: github.com/hashicorp/packer-plugin-amazon/builder/common.mostFreeSubnet(...)
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 	github.com/hashicorp/packer-plugin-amazon/builder/common/step_network_info.go:56
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: github.com/hashicorp/packer-plugin-amazon/builder/common.(*StepNetworkInfo).GetDefaultVPCAndSubnet(0xc00054a410, {0x26d2e60, 0xc0006e0120}, {0x2784708, 0xc000626048}, {0x2ca76910158?, 0x0?})
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 	github.com/hashicorp/packer-plugin-amazon/builder/common/step_network_info.go:250 +0xa9d
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: github.com/hashicorp/packer-plugin-amazon/builder/common.(*StepNetworkInfo).Run(0xc00054a410, {0x2233bb3?, 0xc0001009b0?}, {0x26cd440, 0xc0006e0810})
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 	github.com/hashicorp/packer-plugin-amazon/builder/common/step_network_info.go:156 +0xe4b
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: github.com/hashicorp/packer-plugin-sdk/multistep.(*BasicRunner).Run(0xc0006e0990, {0x26cd558, 0xc0001009b0}, {0x26cd440, 0xc0006e0810})
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 	github.com/hashicorp/packer-plugin-sdk@v0.5.4/multistep/basic_runner.go:73 +0x2be
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: github.com/hashicorp/packer-plugin-amazon/builder/ebs.(*Builder).Run(0xc000460a80, {0x26cd558, 0xc0001009b0}, {0x26d2e60?, 0xc0006e0120}, {0x26b7700?, 0xc000600060})
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 	github.com/hashicorp/packer-plugin-amazon/builder/ebs/builder.go:467 +0x2c71
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: github.com/hashicorp/packer-plugin-sdk/rpc.(*BuilderServer).Run(0xc0001d4400, 0x7a0030?, 0xc0007a0010)
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 	github.com/hashicorp/packer-plugin-sdk@v0.5.4/rpc/builder.go:120 +0x1c8
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: reflect.Value.call({0xc0005b6ba0?, 0xc0005606e0?, 0x0?}, {0x222df13, 0x4}, {0xc000099ef8, 0x3, 0x0?})
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 	reflect/value.go:596 +0xce7
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: reflect.Value.Call({0xc0005b6ba0?, 0xc0005606e0?, 0x0?}, {0xc000099ef8?, 0x0?, 0x0?})
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 	reflect/value.go:380 +0xb9
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: net/rpc.(*service).call(0xc0001d4440, 0x0?, 0x0?, 0xc000680010, 0xc00017f080, 0x0?, {0x1d24b40?, 0xc0007a000c?, 0x0?}, {0x1cd3a80, ...}, ...)
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 	net/rpc/server.go:382 +0x211
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: created by net/rpc.(*Server).ServeCodec in goroutine 1
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 	net/rpc/server.go:479 +0x410
+2025/01/26 17:18:33 [ERR] yamux: Failed to read header: read tcp 127.0.0.1:52193->127.0.0.1:10000: wsarecv: Se ha forzado la interrupción de una conexión existente por el host remoto.
+2025/01/26 17:18:33 [INFO] (telemetry) ending amazon-ebs.ubuntu-mongo
+2025/01/26 17:18:33 ui error: Build 'mongodb-instance.amazon-ebs.ubuntu-mongo' errored after 4 seconds 67 milliseconds: unexpected EOF
+2025/01/26 17:18:33 C:\Users\Tyler\AppData\Roaming\packer.d\plugins\github.com\hashicorp\amazon\packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe: plugin process exited
+2025/01/26 17:18:33 ui: ==> node-nginx-app.amazon-ebs.ubuntu-node: Failed to filter subnets/AZ for the requested machine type "t2.micro": no AZ match the requested machine type "t2.micro"
+2025/01/26 17:18:33 ui: ==> node-nginx-app.amazon-ebs.ubuntu-node: This may result in Packer picking a subnet/AZ that can't host the requested machine type
+2025/01/26 17:18:33 ui: ==> node-nginx-app.amazon-ebs.ubuntu-node: Please check that you have the permissions required to run DescribeInstanceTypeOfferings and try again.
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: panic: runtime error: index out of range [-1]
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: goroutine 21 [running]:
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: github.com/hashicorp/packer-plugin-amazon/builder/common.mostFreeSubnet(...)
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 	github.com/hashicorp/packer-plugin-amazon/builder/common/step_network_info.go:56
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: github.com/hashicorp/packer-plugin-amazon/builder/common.(*StepNetworkInfo).GetDefaultVPCAndSubnet(0xc0007981a0, {0x26d2e60, 0xc0007e5ef0}, {0x2784708, 0xc0007a0040}, {0x1fe2026c600?, 0x0?})
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 	github.com/hashicorp/packer-plugin-amazon/builder/common/step_network_info.go:250 +0xa9d
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: github.com/hashicorp/packer-plugin-amazon/builder/common.(*StepNetworkInfo).Run(0xc0007981a0, {0x2233bb3?, 0xc0006040f0?}, {0x26cd440, 0xc0006125a0})
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 	github.com/hashicorp/packer-plugin-amazon/builder/common/step_network_info.go:156 +0xe4b
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: github.com/hashicorp/packer-plugin-sdk/multistep.(*BasicRunner).Run(0xc000612720, {0x26cd558, 0xc0006040f0}, {0x26cd440, 0xc0006125a0})
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 	github.com/hashicorp/packer-plugin-sdk@v0.5.4/multistep/basic_runner.go:73 +0x2be
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: github.com/hashicorp/packer-plugin-amazon/builder/ebs.(*Builder).Run(0xc0003f2a80, {0x26cd558, 0xc0006040f0}, {0x26d2e60?, 0xc0007e5ef0}, {0x26b7700?, 0xc00055f260})
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 	github.com/hashicorp/packer-plugin-amazon/builder/ebs/builder.go:467 +0x2c71
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: github.com/hashicorp/packer-plugin-sdk/rpc.(*BuilderServer).Run(0xc0001d4940, 0xb1510?, 0xc0000b14f0)
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 	github.com/hashicorp/packer-plugin-sdk@v0.5.4/rpc/builder.go:120 +0x1c8
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: reflect.Value.call({0xc000098c60?, 0xc00006eda8?, 0x0?}, {0x222df13, 0x4}, {0xc000453ef8, 0x3, 0x0?})
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 	reflect/value.go:596 +0xce7
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: reflect.Value.Call({0xc000098c60?, 0xc00006eda8?, 0x0?}, {0xc000453ef8?, 0x0?, 0x0?})
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 	reflect/value.go:380 +0xb9
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: net/rpc.(*service).call(0xc0001d4980, 0x0?, 0x0?, 0xc0000d3660, 0xc00017f400, 0x0?, {0x1d24b40?, 0xc0000b14ec?, 0x0?}, {0x1cd3a80, ...}, ...)
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 	net/rpc/server.go:382 +0x211
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: created by net/rpc.(*Server).ServeCodec in goroutine 1
+2025/01/26 17:18:33 packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe plugin: 	net/rpc/server.go:479 +0x410
+2025/01/26 17:18:33 [ERR] yamux: Failed to read header: read tcp 127.0.0.1:52187->127.0.0.1:10000: wsarecv: Se ha forzado la interrupción de una conexión existente por el host remoto.
+2025/01/26 17:18:33 [INFO] (telemetry) ending amazon-ebs.ubuntu-node
+2025/01/26 17:18:33 ui error: Build 'node-nginx-app.amazon-ebs.ubuntu-node' errored after 4 seconds 112 milliseconds: unexpected EOF
+2025/01/26 17:18:33 ui: 
+==> Wait completed after 4 seconds 112 milliseconds
+2025/01/26 17:18:33 machine readable: error-count []string{"2"}
+2025/01/26 17:18:33 ui error: 
+==> Some builds didn't complete successfully and had errors:
+2025/01/26 17:18:33 machine readable: mongodb-instance.amazon-ebs.ubuntu-mongo,error []string{"unexpected EOF"}
+2025/01/26 17:18:33 ui error: --> mongodb-instance.amazon-ebs.ubuntu-mongo: unexpected EOF
+2025/01/26 17:18:33 machine readable: node-nginx-app.amazon-ebs.ubuntu-node,error []string{"unexpected EOF"}
+2025/01/26 17:18:33 ui error: --> node-nginx-app.amazon-ebs.ubuntu-node: unexpected EOF
+2025/01/26 17:18:33 ui: 
+==> Builds finished but no artifacts were created.
+2025/01/26 17:18:33 [INFO] (telemetry) Finalizing.
+2025/01/26 17:18:33 C:\Users\Tyler\AppData\Roaming\packer.d\plugins\github.com\hashicorp\amazon\packer-plugin-amazon_v1.3.3_x5.0_windows_amd64.exe: plugin process exited
+2025/01/26 17:18:34 waiting for all plugin processes to complete...
+2025/01/26 17:18:34 [ERR] yamux: Failed to read header: read tcp 127.0.0.1:52191->127.0.0.1:10000: wsarecv: Se ha forzado la interrupción de una conexión existente por el host remoto.
+2025/01/26 17:18:34 [ERR] yamux: Failed to read header: read tcp 127.0.0.1:52196->127.0.0.1:10000: wsarecv: Se ha forzado la interrupción de una conexión existente por el host remoto.
+2025/01/26 17:18:34 [ERR] yamux: Failed to read header: read tcp 127.0.0.1:52192->127.0.0.1:10000: wsarecv: Se ha forzado la interrupción de una conexión existente por el host remoto.
+2025/01/26 17:18:34 [ERR] yamux: Failed to read header: read tcp 127.0.0.1:52189->127.0.0.1:10000: wsarecv: Se ha forzado la interrupción de una conexión existente por el host remoto.
+2025/01/26 17:18:34 C:\ProgramData\chocolatey\lib\packer\tools\packer.exe: plugin process exited
+2025/01/26 17:18:34 C:\ProgramData\chocolatey\lib\packer\tools\packer.exe: plugin process exited
+2025/01/26 17:18:34 C:\ProgramData\chocolatey\lib\packer\tools\packer.exe: plugin process exited
+2025/01/26 17:18:34 [ERR] yamux: Failed to read header: read tcp 127.0.0.1:52195->127.0.0.1:10000: wsarecv: Se ha forzado la interrupción de una conexión existente por el host remoto.
+2025/01/26 17:18:34 [ERR] yamux: Failed to read header: read tcp 127.0.0.1:52188->127.0.0.1:10000: wsarecv: Se ha forzado la interrupción de una conexión existente por el host remoto.
+2025/01/26 17:18:34 [ERR] yamux: Failed to read header: read tcp 127.0.0.1:52194->127.0.0.1:10000: wsarecv: Se ha forzado la interrupción de una conexión existente por el host remoto.
+2025/01/26 17:18:34 [ERR] yamux: Failed to read header: read tcp 127.0.0.1:52190->127.0.0.1:10000: wsarecv: Se ha forzado la interrupción de una conexión existente por el host remoto.
+2025/01/26 17:18:34 C:\ProgramData\chocolatey\lib\packer\tools\packer.exe: plugin process exited
+2025/01/26 17:18:34 C:\ProgramData\chocolatey\lib\packer\tools\packer.exe: plugin process exited
+2025/01/26 17:18:34 C:\ProgramData\chocolatey\lib\packer\tools\packer.exe: plugin process exited
+2025/01/26 17:18:34 C:\ProgramData\chocolatey\lib\packer\tools\packer.exe: plugin process exited
+2025/01/26 17:18:34 C:\ProgramData\chocolatey\lib\packer\tools\packer.exe: plugin process exited

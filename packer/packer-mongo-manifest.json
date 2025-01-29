@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "name": "ubuntu-mongo",
+      "builder_type": "amazon-ebs",
+      "build_time": 1737934865,
+      "files": null,
+      "artifact_id": "us-west-2:ami-009481e86e1cf9343",
+      "packer_run_uuid": "5bff845f-733a-ecdc-8c83-0feb74661100",
+      "custom_data": null
+    }
+  ],
+  "last_run_uuid": "5bff845f-733a-ecdc-8c83-0feb74661100"
+}
